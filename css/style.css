@@ -40,6 +40,10 @@ body {
 a{
     color: black;
 }
+
+.mapa {
+    box-sizing: content-box;
+  }
 /* Colores */
 
 

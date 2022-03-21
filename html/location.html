@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="Description" content="Proyecto final de trimestre"/>
+        <meta name="author" content="Victor Manuel Heras Durillo">
+        <title>J&EPC</title>
+    </head>
+    <body>
+        <!--JavaScript-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <!--JavaScript-->
+
+        <!-- Todo los contenedores siguen el siguiente patrón:<div class =" xs || md || xl || añadidos como -> navbar text-center etc"-->
+
+        <div class="container-fluid degradado">
+            <header class="row cadet">
+                <div class="col-12 ">
+                    <div class="row ">
+                        <!-- Imagen principal -->
+
+                        <div
+                            class="col-4 offset-4 || col-md-2 offset-md-0 || col-xl-1 offset-xl-1  || mb-3 mt-3">
+                            <img class="img-fluid" src="../img/mainicon.png" alt="pagina principal">
+                        </div>
+
+                        <!-- Imagen principal -->
+
+                        <!-- Buscador y botones -->
+                        <div class="col-12 || col-md-8 align-self-md-center || col-xl-6 offset-xl-1 ">
+                            <div class="row">
+                                <div class="col-10">
+                                    <input type="search" class="form-control h-100" placeholder="Buscar"/>
+                                </div>
+                                <div class="col- ">
+                                    <button type="submit" class="btn rounded tea">
+                                        <span class="material-icons-outlined mt-1">search</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="col-2 || col-md-1 align-self-md-center || col-xl-1 float-xl-left pt-xl-2 ">
+                            <figure>
+                                <a href="#">
+                                    <img src="../img/prof_ico.png" alt="Perfil" class="offset-2 || offset-md-0 || offset-xl-0 col-xl-5 || img-fluid tea rounded-circle p-1 mt-2 ">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-2 || col-md-1 align-self-md-center || col-xl-1 pt-xl-2 ">
+                            <figure>
+                                <a href="#">
+                                    <img src="../img/servicios.png" alt="" class="offset-2 || offset-md-0 || offset-xl-0 col-xl-5 || img-fluid tea rounded-circle p-1 mt-2 ">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Buscador y botones-->
+                    </div>
+                </div>
+
+                <!-- NavBar -->
+
+                <ul
+                    class="col-12 || col-md-10 offset-md-1 || navbar list-unstyled navbar-light ">
+                    <li class="">
+                        <button class="navbar-toggler tea" type="button" data-toggle="collapse" data-target="#menunav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </li>
+                    <li class="d-none || d-md-block || tea btn col-2 align-self-center">
+                        <a href="">Aplicaciones móviles</a>
+                    </li>
+                    <li class="d-none || d-md-block tea btn col-2 align-self-center">
+                        <a href="">Programa gestión</a>
+                    </li>
+                    <li class="d-none || d-xl-block tea btn col-2 align-self-center">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="d-none || d-xl-block tea btn col-2 align-self-center">
+                        <a href="">Contacto</a>
+                    </li>
+                    <li class="collapse navbar-collapse" id="menunav">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Aplicaciones Móviles</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Gestion Empresas</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Diseño</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Informática</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link nav-item text-dark">Ofertas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- NavBar -->
+
+            </header>
+
+            <main class="row degradado">
+                <div class="col-xl-12 d-none d-xl-block text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.4851859567742!2d-3.771721174736259!3d38.171761667309944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c214015e9fd65%3A0x64159a0001179b45!2sJ%26E%20PC!5e0!3m2!1ses!2ses!4v1647891086140!5m2!1ses!2ses" width="2000" height="970" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                </div>
+                <div class="col-md-12 d-none d-md-block d-xl-none text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.4851859567742!2d-3.771721174736259!3d38.171761667309944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c214015e9fd65%3A0x64159a0001179b45!2sJ%26E%20PC!5e0!3m2!1ses!2ses!4v1647891086140!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-12 d-md-none">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.4851859567742!2d-3.771721174736259!3d38.171761667309944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c214015e9fd65%3A0x64159a0001179b45!2sJ%26E%20PC!5e0!3m2!1ses!2ses!4v1647891086140!5m2!1ses!2ses" width="345" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </main>
+
+            <footer class="row degradado pt-3">
+                <ul class=" offset-md-1 || offset-xl-2 || nav d-none d-md-flex">
+                    <li>
+                        <img src="../img/contacto.png" alt="Contáctanos" class="w-50">
+                    </li>
+                    <li>
+                        <img src="../img/location.png" alt="Visítanos" class="w-50">
+                    </li>
+                    <li>
+                        <img src="../img/inicio.png" alt="Volver al Inicio" class="w-50">
+                    </li>
+                </ul>
+                <div id="contacto" class="col-5 || col-md-2 || col-xl-2 ">
+                    <ul class="list-unstyled">
+                        <li>Contacto:</li>
+                        <li>+34 653 37 10 60</li>
+                    </ul>
+                </div>
+                <div id="descripción" class="col-4 || col-md-2">
+                    <ul class="list-unstyled">
+                        <li>Conócenos:</li>
+                        <li>
+                            Av. Linares, 24, 23711 <br> Baños de la Encina, Jaén</li>
+                    </ul>
+                </div>
+                <div id="comunidad" class="col-2 || col-md-2 || offset-xl-1">
+                    <ul class="list-unstyled">
+                        <li>RRSS:</li>
+                        <li>
+                            <a href="https://es-es.facebook.com/jyepc/" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="http://jyepc.es/" target="_blank">Linkdin</a>
+                        </li>
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="col-12 text-right">Pagina web diseñada y programada por:<br><a href="https://www.linkedin.com/in/vmheras/">Victor Manuel Heras Durillo</a></p>
+            </footer>
+            <!--Footer Nav-->
+            <ul
+                class="row || nav d-md-none justify-content-around text-center p-1 azul fixed-bottom position-sticky">
+                <li class="col-4">
+                    <img src="../img/contacto.png" alt="Contáctanos" class="w-50">
+                </li>
+                <li class="col-4 || border-right border-left">
+                    <img src="../img/location.png" alt="Visítanos" class="w-50">
+                </li>
+                <li class="col-4">
+                    <a href="../index.html"><img src="../img/inicio.png" alt="Volver al Inicio" class="w-50"></a>
+                </li>
+            </ul>
+            <!--Footer Nav-->
+        </div>
+
+    </body>
+</html>
