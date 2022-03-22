@@ -41,11 +41,24 @@ a{
     color: black;
 }
 
-.mapa {
-    box-sizing: content-box;
-  }
 /* Colores */
 
+/*Hover*/
+.navegacion a:hover, .navegacion img:hover{
+    background-color: #22577A;
+    color: white !important;
+    border-radius: 5px;
+}
 
+.card:hover{
+    transition: 0.7s;
+    transform: scale(1.05);
+}
+
+.icon:hover{
+    transition:0.5s;
+    transform: scale(1.2);
+}
+/*Hover*/
 
 

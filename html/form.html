@@ -27,7 +27,7 @@
                         <!-- Imagen principal -->
 
                         <div
-                            class="col-4 offset-4 || col-md-2 offset-md-0 || col-xl-1 offset-xl-1  || mb-3 mt-3">
+                            class="col-4 offset-4 || col-md-2 offset-md-0 || col-xl-1 offset-xl-1  || mb-3 mt-3 icon">
                             <a href="../index.html"><img class="img-fluid" src="../img/mainicon.png" alt="pagina principal"></a>
                         </div>
 
@@ -50,7 +50,7 @@
                         <div
                             class="col-2 || col-md-1 align-self-md-center || col-xl-1 float-xl-left pt-xl-2 ">
                             <figure>
-                                <a href="#">
+                                <a href="#" class="navegacion">
                                     <img
                                         src="../img/prof_ico.png"
                                         alt="Perfil"
@@ -60,7 +60,7 @@
                         </div>
                         <div class="col-2 || col-md-1 align-self-md-center || col-xl-1 pt-xl-2 ">
                             <figure>
-                                <a href="#">
+                                <a href="#" class="navegacion">
                                     <img
                                         src="../img/servicios.png"
                                         alt=""
@@ -74,30 +74,32 @@
 
                 <!-- NavBar -->
 
-                <ul
-                    class="col-12 || col-md-10 offset-md-1 || navbar list-unstyled navbar-light ">
-                    <li class="">
-                        <button
-                            class="navbar-toggler tea"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#menunav">
+                <nav
+                    class="col-12 || col-md-10 offset-md-1 || navbar list-unstyled navbar-light navegacion">
+                    <div class="col-1">
+                        <button class="navbar-toggler tea" type="button" data-toggle="collapse" data-target="#menunav">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                    </li>
-                    <li class="d-none || d-md-block || tea btn col-2 align-self-center">
-                        <a href="">Aplicaciones móviles</a>
-                    </li>
-                    <li class="d-none || d-md-block tea btn col-2 align-self-center">
-                        <a href="">Programa gestión</a>
-                    </li>
-                    <li class="d-none || d-xl-block tea btn col-2 align-self-center">
-                        <a href="">Blog</a>
-                    </li>
-                    <li class="d-none || d-xl-block tea btn col-2 align-self-center">
-                        <a href="">Contacto</a>
-                    </li>
-                    <li class="collapse navbar-collapse" id="menunav">
+                    </div>
+                    <a href="" class="d-none || d-md-block || btn col-2 tea ">
+                        Aplicaciones móviles
+                    </a>
+                    
+                    <a href="" class="d-none || d-md-block tea btn col-2 align-self-center">
+                        Programa gestión
+                    </a>
+
+                    <a href="" class="d-none || d-xl-block tea btn col-2 align-self-center">
+                        Blog
+                    </a>
+                    
+
+                    <a href="#" class="d-none || d-xl-block text-white btn col-2 align-self-center azul">
+                        Contacto
+                    </a>
+                    
+
+                    <div class="collapse navbar-collapse" id="menunav">
                         <ul class="navbar-nav">
                             <li>
                                 <a href="#" class="nav-link nav-item text-dark">Aplicaciones Móviles</a>
@@ -121,9 +123,8 @@
                                 <a href="#" class="nav-link nav-item text-dark">Ofertas</a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
-
+                    </div>
+                </nav>
                 <!-- NavBar -->
 
             </header>
@@ -234,38 +235,29 @@
                 <form class="col-6 offset-3 mt-5 mb-5 degradado pt-2 rounded">
                     <div class="form-row form-group ">
                         <label for="name" class="h4">Nombre o empresa *</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" required="required">
                     </div>
                     <div class="form-row form-group ">
                         <label for="mail" class="h4">Correo Electrónico*</label>
-                        <input type="email" class="form-control" id="mail" required>
+                        <input type="email" class="form-control" id="mail" required="required">
                     </div>
                     <div class="form-row form-group ">
                         <label class="h4" for="inlineFormInputGroup">Teléfono*</label>
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                            <div class="input-group-text">+34</div>
+                                <div class="input-group-text">+34</div>
                             </div>
-                            <input type="tel" class="form-control" id="inlineFormInputGroup" placeholder="Número de teléfono" maxlength="9">
+                            <input type="tel" class="form-control" id="inlineFormInputGroup" placeholder="Número de teléfono" maxlength="9" required>
                         </div>
                     </div>
                     <div class="form-row form-group ">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
-                                <option selected="selected">Choose...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
+                        <label for="asunto" class="h4">Asunto</label>
+                        <input type="text" class="form-control" id="asunto">
                     </div>
+                    <div class="form-row form-group">
+                        <label for="mensaje" class="h4">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5"></textarea>
+                      </div>
                     <button type="submit" class="btn tea">ENVIAR</button>
                 </form>
 
