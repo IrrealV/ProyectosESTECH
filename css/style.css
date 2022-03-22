@@ -59,6 +59,10 @@ a{
     transition:0.5s;
     transform: scale(1.2);
 }
-/*Hover*/
 
+.aceituna:hover{
+    transition: 50s;
+    transform: scale(20);
+}
+/*Hover*/
 
